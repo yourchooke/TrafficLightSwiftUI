@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct circleLight: View {
-    @State var color:  Color
+    let color:  Color
     
     var body: some View {
         Circle()
