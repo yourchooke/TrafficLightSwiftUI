@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct circleLight: View {
+struct CircleLight: View {
     let color:  Color
     let opacity: Double
     
@@ -23,6 +23,6 @@ struct circleLight: View {
 
 struct circleLight_Previews: PreviewProvider {
     static var previews: some View {
-        circleLight(color: .red, opacity: 1.0)
+        CircleLight(color: .red, opacity: 1.0)
     }
 }

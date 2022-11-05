@@ -18,9 +18,9 @@ struct ContentView: View {
             Color(.lightGray)
                 .ignoresSafeArea()
             VStack {
-                circleLight(color: .red, opacity: redOpacity)
-                circleLight(color: .yellow, opacity: yellowOpacity)
-                circleLight(color: .green, opacity: greenOpacity)
+                CircleLight(color: .red, opacity: redOpacity)
+                CircleLight(color: .yellow, opacity: yellowOpacity)
+                CircleLight(color: .green, opacity: greenOpacity)
                 
                 Spacer()
                 
