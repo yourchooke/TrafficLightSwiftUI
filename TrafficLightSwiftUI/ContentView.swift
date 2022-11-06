@@ -9,18 +9,20 @@ import SwiftUI
 
 struct ContentView: View {
     @State private var buttonText = "Start"
-    @State private var redOpacity = 0.5
-    @State private var yellowOpacity = 0.5
-    @State private var greenOpacity = 0.5
+    @State private var currentLight: Light = .noLight
+    
+    enum Light {
+        case red, yellow, green, noLight
+    }
     
     var body: some View {
         ZStack{
             Color(.lightGray)
                 .ignoresSafeArea()
             VStack {
-                CircleLight(color: .red, opacity: redOpacity)
-                CircleLight(color: .yellow, opacity: yellowOpacity)
-                CircleLight(color: .green, opacity: greenOpacity)
+                CircleLight(color: .red, opacity: currentLight == .red ? 1: 0.3)
+                CircleLight(color: .yellow, opacity: currentLight == .yellow ? 1: 0.3)
+                CircleLight(color: .green, opacity: currentLight == .green ? 1: 0.3)
                 
                 Spacer()
                 
@@ -39,20 +41,12 @@ struct ContentView: View {
     }
     
     private func changeLight() {
-        if redOpacity == 0.5 && yellowOpacity == 0.5 && greenOpacity == 0.5 {
-            redOpacity = 1.0
-        } else if redOpacity == 1.0 {
-            redOpacity = 0.5
-            yellowOpacity = 1.0
-            greenOpacity = 0.5
-        } else if yellowOpacity == 1.0 {
-            yellowOpacity = 0.5
-            greenOpacity = 1.0
-        } else if greenOpacity == 1.0 {
-            greenOpacity = 0.5
-            redOpacity = 1.0
+        switch currentLight {
+        case .noLight: currentLight = .red
+        case .red: currentLight = .yellow
+        case .yellow: currentLight = .green
+        case .green: currentLight = .red
         }
-        
     }
 }
 

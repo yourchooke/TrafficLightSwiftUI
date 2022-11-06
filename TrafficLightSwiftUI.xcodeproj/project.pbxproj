@@ -12,6 +12,7 @@
 		270AE0BD29150E4C00AE368F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 270AE0BC29150E4C00AE368F /* Assets.xcassets */; };
 		270AE0C029150E4C00AE368F /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 270AE0BF29150E4C00AE368F /* Preview Assets.xcassets */; };
 		270AE0C929150E8900AE368F /* CircleLight.swift in Sources */ = {isa = PBXBuildFile; fileRef = 270AE0C829150E8900AE368F /* CircleLight.swift */; };
+		270AE0E52916BA5100AE368F /* TrafficLightButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 270AE0E42916BA5100AE368F /* TrafficLightButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,6 +22,7 @@
 		270AE0BC29150E4C00AE368F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		270AE0BF29150E4C00AE368F /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		270AE0C829150E8900AE368F /* CircleLight.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleLight.swift; sourceTree = "<group>"; };
+		270AE0E42916BA5100AE368F /* TrafficLightButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrafficLightButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +56,7 @@
 			isa = PBXGroup;
 			children = (
 				270AE0C829150E8900AE368F /* CircleLight.swift */,
+				270AE0E42916BA5100AE368F /* TrafficLightButton.swift */,
 				270AE0B829150E4B00AE368F /* TrafficLightSwiftUIApp.swift */,
 				270AE0BA29150E4B00AE368F /* ContentView.swift */,
 				270AE0BC29150E4C00AE368F /* Assets.xcassets */,
@@ -142,6 +145,7 @@
 			files = (
 				270AE0BB29150E4B00AE368F /* ContentView.swift in Sources */,
 				270AE0B929150E4B00AE368F /* TrafficLightSwiftUIApp.swift in Sources */,
+				270AE0E52916BA5100AE368F /* TrafficLightButton.swift in Sources */,
 				270AE0C929150E8900AE368F /* CircleLight.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
